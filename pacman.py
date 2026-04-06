@@ -223,8 +223,6 @@ while running:
         else:
             pygame.draw.circle(screen, YELLOW, player.center, 14)
             pygame.draw.circle(screen, BLACK, player.center, 8)
-        pygame.draw.circle(screen, WHITE, player.center, 12, 4)
-        pygame.draw.rect(screen, RED, player, 1)
     elif game_state == 'lose':
         lose_text = font.render("Game Over - Press R to restart or Q to quit", True, RED)
         screen.blit(lose_text, (WIDTH//2 - lose_text.get_width()//2, HEIGHT//2 - lose_text.get_height()//2))
